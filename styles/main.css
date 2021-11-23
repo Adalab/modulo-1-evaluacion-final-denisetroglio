@@ -237,6 +237,11 @@
   padding: 60px 15px 45px;
 }
 
+.links {
+ text-decoration: none;
+ color: white;
+}
+
 .copyright {
   color: white;
   font-size: 14px;
