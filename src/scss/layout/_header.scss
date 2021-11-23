@@ -8,6 +8,7 @@
   margin-bottom: 15px;
 }
 
+
 .article {
   display: flex;
   flex-direction: column;
@@ -37,11 +38,33 @@
   height: auto;
 }
 
+@media all and (min-width: 768px) {
+  .title {
+    font-size: 65px;
+    padding: 0 45px 0 45px;
+    transform: translateY(-60%);
+ }
+    .subtitle{
+      font-size: 24px;
+      transform:translateY(-480%);
+    }
+
+    .menu {
+      width: 45px;
+      height: 45px;
+    }
+
+    .circle {
+      transform: translateY(-190%);
+    }
+}
+
 .subtitle {
   font-family: "Roboto";
   color: white;
   font-size: 16px;
   text-align: center;
+
 }
 
 .circle {
