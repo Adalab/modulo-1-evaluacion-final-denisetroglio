@@ -1,12 +1,12 @@
 .tips {
   font-size: 14px;
-  color: #8ccbea;
+  color: $Tips_color;
   margin: 15px;
-  font-family: "Roboto";
+  font-family: $font_Tips;
 }
 
 .title_1 {
-  font-family: "Roboto Slab", serif;
+  font-family: $Title_tips;
   font-size: 24px;
   text-transform: capitalize;
   margin: 15px;
@@ -14,18 +14,18 @@
 
 .text {
   font-size: 18px;
-  font-family: "Roboto";
-  color: #4a4a4a;
+  font-family: $font_Tips;
+  color: $color_text_tips;
   margin: 15px;
 }
 
 .go {
-  background-color: white;
+  background-color: $background_go;
   border-radius: 22.5px;
-  color: #f26002;
-  font-family: "Roboto";
+  color: $botones_color;
+  font-family: $font_Tips;
   font-size: 20px;
-  border: solid 3px #f26002;
+  border: solid 3px $botones_color;
   width: 76px;
   height: 45px;
   font-weight: 700;
