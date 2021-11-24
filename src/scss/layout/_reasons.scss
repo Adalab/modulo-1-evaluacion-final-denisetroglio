@@ -1,16 +1,16 @@
 .reasons {
-    background-color: #eff9ff;
+    background-color: $background_Reasons;
     width: 100%;
     height: 624px;
   }
   
   .title_2 {
-    font-family: "Roboto Slab", serif;
+    font-family: $font_title_reasons;
     text-transform: capitalize;
     font-size: 24px;
     padding: 30px 15px 15px;
     text-align: center;
-    color: #000000;
+    color: $color_Texto;
   }
 
 .container {
@@ -23,7 +23,7 @@
   .article_1 {
     grid-column: 1/4;
     grid-row: 1/2;
-    font-family: "Roboto Slab", serif;
+    font-family: $font_title_reasons;
     font-size: 18px;
     text-align: center;
     align-items: center;
@@ -33,7 +33,7 @@
   .article_2 {
     grid-column: 1/4;
     grid-row: 2/3;
-    font-family: "Roboto Slab", serif;
+    font-family: $font_title_reasons;
     font-size: 18px;
     text-align: center;
     align-items: center;
@@ -43,7 +43,7 @@
   .article_3 {
     grid-column: 1/4;
     grid-row: 3/4;
-    font-family: "Roboto Slab", serif;
+    font-family: $font_title_reasons;
     font-size: 18px;
     text-align: center;
     margin: 30px 0 0;
@@ -53,7 +53,7 @@
   
   .one {
     font-size: 18px;
-    font-family: "Roboto";
+    font-family: $font_text_reasons;
     text-align: center;
     margin: 0 85px 0;
     line-height: 30px;
@@ -62,7 +62,7 @@
   
   .two {
     font-size: 18px;
-    font-family: "Roboto";
+    font-family: $font_text_reasons;
     text-align: center;
     margin: 0 85px 0;
     line-height: 30px;
@@ -71,7 +71,7 @@
   
   .three {
     font-size: 18px;
-    font-family: "Roboto";
+    font-family: $font_text_reasons;
     text-align: center;
     margin: 0 85px 0;
     line-height: 30px;
@@ -79,10 +79,10 @@
   }
   
   .more {
-    background-color: #f26002;
-    border: solid 2px #f26002;
+    background-color: $botones_color;
+    border: solid 2px $botones_color;
     font-size: 20px;
-    font-family: "Roboto";
+    font-family: $font_text_reasons;
     font-weight: 400;
     color: white;
     border-radius: 22.5px;
@@ -91,7 +91,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 80px 90px 50px;
+    margin: 80px 70px 50px;
+    transform: translateY(-90%);
   }
   
   .top {
@@ -100,7 +101,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    background-color: white;
+    background-color: $background_boton_top;
     width: 45px;
     height: 45px;
     transform: translate(300%, -30%);

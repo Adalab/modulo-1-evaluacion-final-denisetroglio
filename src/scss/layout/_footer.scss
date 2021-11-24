@@ -1,5 +1,5 @@
 .footer {
-  background-color: #304268;
+  background-color: $background_footer;
   width: 100%;
   height: 100%;
 }
@@ -8,9 +8,9 @@
   list-style-type: none;
   line-height: 1.88;
   font-size: 16px;
-  font-family: "Roboto";
+  font-family: $font_footer;
   text-transform: uppercase;
-  color: white;
+  color: $texto_footer;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -23,7 +23,7 @@
   list-style-type: none;
   line-height: 1.88;
   font-size: 16px;
-  font-family: "Roboto";
+  font-family: $font_footer;
   text-transform: uppercase;
   color: white;
   display: flex;
@@ -37,13 +37,13 @@
 
 .links {
   text-decoration: none;
-  color: white;
+  color: $texto_footer;
 }
 
 .copyright {
-  color: white;
+  color: $texto_footer;
   font-size: 14px;
-  font-family: "Roboto";
+  font-family: $font_footer;
   line-height: 2.14;
   display: flex;
   justify-content: center;
@@ -54,9 +54,9 @@
 }
 
 .span {
-  color: white;
+  color: $texto_footer;
   font-size: 14px;
-  font-family: "Roboto";
+  font-family: $font_footer;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -66,7 +66,7 @@
 }
 
 .heart {
-  color: #f26002;
+  color: $heart_color;
   display: flex;
   justify-content: space-evenly;
 }
