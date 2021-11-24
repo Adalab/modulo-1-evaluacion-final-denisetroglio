@@ -5,26 +5,6 @@
   font-family: "Roboto";
 }
 
-@media all and (min-width: 768px) {
-  .tips {
-    margin: 45px;
-  }
-
-  .title_1 {
-    margin: 45px;
-    font-size: 26px;
-  }
-
-  .text {
-    margin: 45px;
-    font-size: 20px;
-  }
-
-  .go {
-    margin: 45px;
-  }
-}
-
 .title_1 {
   font-family: "Roboto Slab", serif;
   font-size: 24px;
@@ -50,4 +30,21 @@
   height: 45px;
   font-weight: 700;
   margin: 40px 0 40px 0;
+}
+
+
+@media all and (min-width: 768px){
+  .tips {
+  margin: 45px;
+  }
+
+  .title_1 {
+  margin-left: 45px;
+  font-size: 26px;
+  }
+
+  .text {
+  margin-left: 45px;
+  font-size: 20px;
+  }
 }

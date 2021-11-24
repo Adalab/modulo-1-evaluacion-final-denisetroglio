@@ -14,8 +14,6 @@
   }
 
 .container {
-    /*height: auto;
-    width: auto;*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   /*  grid-template-rows: 1fr 1fr 1fr;*/
@@ -105,7 +103,7 @@
     background-color: white;
     width: 45px;
     height: 45px;
-    transform: translate(370%, -50%);
+    transform: translate(300%, -30%);
     animation-duration: 5s;
     animation-name: intro;
     animation-iteration-count: 1;
@@ -118,5 +116,12 @@
     }
   }
 
+
+  @media all and (min-width: 768px){
+    .more{
+      transform: translate(110%, 170%);
+     
+    }
+  }
 
   
