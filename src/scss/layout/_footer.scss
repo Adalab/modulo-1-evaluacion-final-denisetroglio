@@ -72,11 +72,16 @@
 }
 
 @media all and (min-width: 768px){
+  .footer{
+    height: 240px;
+    width: 768px;
+  }
+
   .copyright {
     text-align: left;
     position: absolute;
     margin: 20px;
-    margin-left: 90px;
+    margin-left: 60px;
     transform: translateY(-430px);
   }
 
@@ -84,7 +89,7 @@
     text-align: left;
     position: absolute;
     margin: 30px;
-    margin-left: 90px;
+    margin-left: 60px;
     padding: 0;
     transform: translateY(-400px);
   }
@@ -93,7 +98,7 @@
     text-align: left;
     position: relative;
     align-items: flex-start;
-    margin-left: 350px;
+    margin-left: 295px;
     transform: translateY(-5%);
   } 
 
