@@ -73,6 +73,37 @@
 
 @media all and (min-width: 768px){
   .copyright {
- 
+    text-align: left;
+    position: absolute;
+    margin: 20px;
+    margin-left: 90px;
+    transform: translateY(-430px);
+  }
+
+  .span {
+    text-align: left;
+    position: absolute;
+    margin: 30px;
+    margin-left: 90px;
+    padding: 0;
+    transform: translateY(-400px);
+  }
+
+  .list{
+    text-align: left;
+    position: relative;
+    align-items: flex-start;
+    margin-left: 350px;
+    transform: translateY(-5%);
+  } 
+
+  .list_2 {
+    text-align: left;
+    position: relative;
+    align-items: flex-start;
+    transform: translateY(-135%);
+    margin-left: 520px;
   }
 }
+
+/*Comentário sobre estilos de ".list_2" para Tablet: Había empezado con flex-end pero no conseguía poner el texto a la izquierda, mismo con la función text-align: left.*/

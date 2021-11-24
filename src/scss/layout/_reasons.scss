@@ -92,7 +92,7 @@
     align-items: center;
     justify-content: center;
     margin: 80px 70px 50px;
-    transform: translateY(-90%);
+    transform: translateY(-80%);
   }
   
   .top {
@@ -120,7 +120,7 @@
 
   @media all and (min-width: 768px){
     .more{
-      transform: translate(110%, 170%);
+      transform: translate(120%, 190%);
     }
     .top{
       transform: translate(800%, -40%);
