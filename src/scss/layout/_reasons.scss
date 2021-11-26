@@ -46,7 +46,7 @@
   font-family: $font_title_reasons;
   font-size: 18px;
   text-align: center;
-  margin: 30px 0 0;
+  margin: 30px 0 20px;
   font-weight: 800;
   align-items: center;
 }
@@ -79,20 +79,21 @@
 }
 
 .more {
-  background-color: $botones_color;
+  background-color: $background_go;
   border: solid 2px $botones_color;
   font-size: 20px;
   font-family: $font_text_reasons;
   font-weight: 400;
-  color: white;
+  color: #f26002;
   border-radius: 22.5px;
   width: 184px;
   height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 80px 70px 50px;
+  margin: 20px 70px 50px;
   transform: translateY(-80%);
+  margin-bottom: 20px;
 }
 
 .top {
@@ -110,6 +111,14 @@
   animation-iteration-count: 1;
   animation-timing-function: linear;
 }
+
+
+@media all and (max-width: 320px){
+ .top{
+   display: none;
+ }
+}
+
 
 @keyframes intro {
   from {
