@@ -14,15 +14,13 @@
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: $background_Reasons;
 }
 
 .article_1 {
-  grid-column: 1/4;
-  grid-row: 1/2;
   font-family: $font_title_reasons;
   font-size: 18px;
   text-align: center;
@@ -31,8 +29,6 @@
 }
 
 .article_2 {
-  grid-column: 1/4;
-  grid-row: 2/3;
   font-family: $font_title_reasons;
   font-size: 18px;
   text-align: center;
@@ -41,8 +37,6 @@
 }
 
 .article_3 {
-  grid-column: 1/4;
-  grid-row: 3/4;
   font-family: $font_title_reasons;
   font-size: 18px;
   text-align: center;
@@ -78,6 +72,13 @@
   font-weight: 500;
 }
 
+.botton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .more {
   background-color: $botones_color;
   border: solid 2px $botones_color;
@@ -91,8 +92,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 80px 70px 50px;
-  transform: translateY(-80%);
+  margin-top: 25px;
+}
+
+.top1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .top {
@@ -104,63 +111,91 @@
   background-color: $background_boton_top;
   width: 45px;
   height: 45px;
-  transform: translate(300%, -30%);
-  animation-duration: 5s;
-  animation-name: intro;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-}
-
-@keyframes intro {
-  from {
-    transform: rotate(360deg);
-  }
+  transform: translateY(130px);
 }
 
 @media all and (min-width: 768px) {
-  .more {
-    transform: translate(120%, -30%);
-  }
-  .top {
-    transform: translate(800%, -40%);
-  }
-  .title_2 {
-    font-size: 26px;
-  }
-  .article_1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    font-size: 20px;
-    padding-right: 10px;
-  }
-  .article_2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    font-size: 20px;
-    padding-right: 20px;
-    margin-left: -20px;
+  .reasons {
+    width: 100%;
+    height: 397px;
   }
 
+  .title_2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    padding: 20px 15px 15px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $background_Reasons;
+  }
+
+  .article_1 {
+    font-size: 24px;
+  }
+  .article_2 {
+    font-size: 24px;
+  }
   .article_3 {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    font-size: 20px;
-    margin-right: 15px;
+    font-size: 24px;
   }
   .one {
+    font-size: 20px;
     line-height: 1.5;
-    margin: 15px;
+    padding: 10px;
+    margin: 0 20px;
   }
 
   .two {
+    font-size: 20px;
     line-height: 1.5;
-    margin: auto;
-    padding: 15px;
+    padding: 10px;
+    margin: 0 20px;
+  }
+  .three {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 10px;
+    margin: 0 20px;
+  }
+  .more {
+    margin-top: 40px;
+  }
+  .top {
+    transform: translateY(70px);
+  }
+}
+
+@media all and (min-width:1200px) {
+  .reasons {
+    width: 100%;
+    height: 427px;
+  }
+  .title_2 {
+    font-size: 32px;
+  }
+  .one {
+    font-size: 22px;
   }
 
+  .two {
+    font-size: 22px;
+  }
   .three {
-    line-height: 1.5;
-    margin: auto;
-    padding: 15px;
+    font-size: 22px;
+  }
+  .more{  
+    width: 255px;
+    height: 45px;
+    font-size: 22px;
+  }
+  .top{
+    transform: translateY(100px);
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
   }
 }

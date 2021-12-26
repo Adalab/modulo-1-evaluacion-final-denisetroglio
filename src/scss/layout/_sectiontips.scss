@@ -36,6 +36,7 @@
 @media all and (min-width: 768px){
   .tips {
   margin: 45px;
+  font-size: 14px;
   }
 
   .title_1 {
@@ -47,4 +48,26 @@
   margin-left: 45px;
   font-size: 20px;
   }
+}
+
+@media all and (min-width: 1200px){
+  .tips {
+ font-size: 16px;
+ padding: 30px 265px;
+ margin: 0;
+  }
+  .title_1 {
+    font-size: 28px;
+    padding: 0 265px;
+    margin: 0;
+    }
+    .text{
+      padding: 30px 265px;
+      margin: 0;
+    }
+    .go{
+      width: 160px;
+      height: 45px;
+      font-size: 24px;
+    }
 }

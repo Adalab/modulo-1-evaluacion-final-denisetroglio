@@ -4,6 +4,12 @@
   height: 100%;
 }
 
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .list {
   list-style-type: none;
   line-height: 1.88;
@@ -11,9 +17,6 @@
   font-family: $font_footer;
   text-transform: uppercase;
   color: $texto_footer;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 60px 15px 45px;
@@ -26,13 +29,9 @@
   font-family: $font_footer;
   text-transform: uppercase;
   color: white;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
   text-align: center;
-  transform: translateY(-30%);
-  padding: 60px 15px 45px;
+  padding: 0 15px 45px;
 }
 
 .links {
@@ -50,7 +49,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transform: translateY(-220%);
 }
 
 .span {
@@ -71,10 +69,10 @@
   justify-content: space-evenly;
 }
 
-@media all and (min-width: 768px){
-  .footer{
+@media all and (min-width: 768px) {
+  .footer {
     height: 240px;
-    width: 768px;
+    width: 100%;
   }
 
   .copyright {
@@ -82,7 +80,7 @@
     position: absolute;
     margin: 20px;
     margin-left: 60px;
-    transform: translateY(-430px);
+    transform: translateY(-130px);
   }
 
   .span {
@@ -90,25 +88,37 @@
     position: absolute;
     margin: 30px;
     margin-left: 60px;
-    padding: 0;
-    transform: translateY(-400px);
+    padding: 15px;
+    transform: translateY(-190px);
   }
 
-  .list{
+  .section1 {
+    flex-direction: row;
+  }
+
+  .list {
     text-align: left;
-    position: relative;
-    align-items: flex-start;
-    margin-left: 295px;
-    transform: translateY(-5%);
-  } 
+    padding: 30px 0 0 180px;
+  }
 
   .list_2 {
     text-align: left;
-    position: relative;
-    align-items: flex-start;
-    transform: translateY(-135%);
-    margin-left: 520px;
+    padding: 30px 0 0 140px;
   }
 }
 
-/*Comentário sobre estilos de ".list_2" para Tablet: Había empezado con flex-end pero no conseguía poner el texto a la izquierda, mismo con la función text-align: left.*/
+@media all and (min-width: 1200px) {
+  .copyright {
+    margin-left: 260px;
+  }
+  .span {
+    margin-left: 250px;
+  }
+  .list {
+    padding: 30px 0 0 90px;
+    font-size: 18px;
+  }
+  .list_2{
+    font-size: 18px;
+  }
+}
